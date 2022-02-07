@@ -1,10 +1,18 @@
 let delayed;
 const ctx = document.getElementById('myChart').getContext('2d');
 const data = {
-        labels: ['Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26'],
+        labels: ['Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
         datasets: [{
-            label: 'shipments against vehicle',
-            data: [0,15,10,10,20,15],
+            label: ' ',
+            data: [10,5,15,10,20,5,15,20],
+            borderColor:'#58cad3',
+            pointBackgroundColor:"#fff",
+            // tension:0.3
+            //pbc for color of the indicator,tension for curve
+        },
+        {
+            label: ' ',
+            data: [20,15,15,5,20,10,15,10],
             borderColor:'#826af9',
             pointBackgroundColor:"#fff",
             // tension:0.3
@@ -22,6 +30,7 @@ const config ={
         scales :{
             y:{
                 ticks :{
+                    stepSize : 5,
                     callback : function (value){
                         return value + 'k'
                         //adds a unit

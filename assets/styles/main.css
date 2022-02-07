@@ -92,7 +92,7 @@ li.site-nav-active a,li.site-nav-active i{
 }
 /* dashboard styling */
 .dashboard header{
-    margin-bottom: 15px;
+    /* margin-bottom: 15px; */
 }
 .dashboard nav{
     display: flex;
@@ -147,11 +147,11 @@ li.site-nav-active a,li.site-nav-active i{
 }
 /* dashboard details styling */
 .dashboard-details{
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .dashboard-welcome{
     padding: 10px 0;
-    margin: 10px 0;
+    margin: 0;
 }
 .dashboard-welcome h3{
     font-weight: normal;
@@ -165,7 +165,7 @@ li.site-nav-active a,li.site-nav-active i{
 }
 
 .card-rows{
-    margin: 15px 0;
+    margin: 10px 0;
     display: flex;
     justify-content: space-between;
 }
@@ -226,12 +226,12 @@ transition: all 0.25s ease-in;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin: 20px 0;
+    margin: 15px 0;
     margin-top: 0;
 }
 .dashboard-charts-info ul{
     background-color: #fff;
-    padding: 10px 15px;
+    padding: 5px 15px;
     border-radius: 30px;
 }
 .dashboard-charts-info li{
@@ -245,14 +245,14 @@ transition: all 0.25s ease-in;
 .dashboard-charts-info li a.active{
     background-color: rgb(56, 112, 243);
     color: #fff;
-    padding: 10px 15px;
+    padding: 5px 15px;
 border-radius: 5px;
 }
 
 .dashboard-charts-display{
     background-color: #fff;
-    padding: 20px 20px 10px 20px;
-    height: 42vh;
+    padding: 20px 40px 10px 40px;
+    height: 48vh;
 }
 .dashboard-detailed{
     display: flex;
@@ -310,8 +310,12 @@ border-radius: 5px;
     height: 20%;
     position: absolute;
 }
-
+.dashboard-for_chart{
+    height: 250px;
+    position: relative;
+}
 #myChart{
-    height: 100% !important;
+    position: absolute;
+    height: 270px !important;
     width: 100% !important;
 }
