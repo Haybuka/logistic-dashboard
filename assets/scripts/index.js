@@ -4,7 +4,7 @@ const data = {
         labels: ['Oct 20','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
         datasets: [{
             label: 'shipments',
-            data: [10,5,15,10,20,5,15,20,10,10],
+            data: [0,10,25,15,30,50,15,10,0,40,20],
             borderColor:'#58cad3',
             pointBackgroundColor:"#fff",
             // tension:0.3
@@ -12,7 +12,7 @@ const data = {
         },
         {
             label: 'vehicle',
-            data: [20,15,15,5,20,10,15,10,5,10],
+            data: [20,30,15,15,40,50,15,30,25,30],
             borderColor:'#826af9',
             fill:'#826af9',
             pointBackgroundColor:"#fff",
@@ -26,7 +26,13 @@ const config ={
     options:{
        plugins:{
         legend:{
-            display:false
+            display:false,
+            labels:{
+                font:{
+                    size:16,
+                    family:"'Poppins',sans-serif"
+                }
+            }
             //to remove data label
         }
        },
@@ -37,7 +43,10 @@ const config ={
         scales :{
             y:{
                 ticks :{
-                    stepSize : 5,
+                    font:{
+                        size:20
+                    },
+                    stepSize : 10,
                     callback : function (value){
                         return value + 'k'
                         //adds a unit
