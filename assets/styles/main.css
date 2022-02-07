@@ -8,13 +8,16 @@
 .container{
     
 }
+body{
+    background-color: rgb(235, 235, 232);
+
+}
 /* main covers all */
 main{
     display: flex;
     width: 100vw;
     height: 100vh;
     /* overflow: hidden; */
-    background-color: rgb(235, 235, 232);
 }
 
 /* styles the direct children of the main */
