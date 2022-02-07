@@ -1,10 +1,10 @@
 let delayed;
 const ctx = document.getElementById('myChart').getContext('2d');
 const data = {
-        labels: ['Oct 20','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
+        labels: ['','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
         datasets: [{
             label: 'shipments',
-            data: [0,10,25,15,30,50,15,10,0,40,20],
+            data: [0,18,25,15,30,50,15,10,30,40,20],
             borderColor:'#58cad3',
             pointBackgroundColor:"#fff",
             // tension:0.3
@@ -29,7 +29,6 @@ const config ={
             display:false,
             labels:{
                 font:{
-                    size:16,
                     family:"'Poppins',sans-serif"
                 }
             }
@@ -44,12 +43,23 @@ const config ={
             y:{
                 ticks :{
                     font:{
-                        size:20
+                        size:20,
+                    family:"'Poppins',sans-serif"
+
                     },
                     stepSize : 10,
                     callback : function (value){
                         return value + 'k'
                         //adds a unit
+                    }
+                }
+            },
+            x:{
+                ticks :{
+                    font:{
+                        size:18,
+                    family:"'Poppins',sans-serif"
+
                     }
                 }
             }
