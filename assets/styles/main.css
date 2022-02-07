@@ -315,11 +315,12 @@ border-radius: 5px;
     position: absolute;
 }
 .dashboard-for_chart{
-    height: 250px;
+    height: 300px;
     position: relative;
 }
 #myChart{
     position: absolute;
-    height: 270px !important;
+    height: 285px !important;
     width: 100% !important;
+    padding: 10px 0;
 }
