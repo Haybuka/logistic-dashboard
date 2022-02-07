@@ -1,10 +1,10 @@
 let delayed;
 const ctx = document.getElementById('myChart').getContext('2d');
 const data = {
-        labels: ['Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
+        labels: ['Oct 20','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
         datasets: [{
             label: ' ',
-            data: [10,5,15,10,20,5,15,20],
+            data: [10,5,15,10,20,5,15,20,10,10],
             borderColor:'#58cad3',
             pointBackgroundColor:"#fff",
             // tension:0.3
@@ -12,7 +12,7 @@ const data = {
         },
         {
             label: ' ',
-            data: [20,15,15,5,20,10,15,10],
+            data: [20,15,15,5,20,10,15,10,5,10],
             borderColor:'#826af9',
             pointBackgroundColor:"#fff",
             // tension:0.3
