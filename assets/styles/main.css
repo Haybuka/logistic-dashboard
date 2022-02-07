@@ -353,3 +353,6 @@ body{
 .site-nav-main a i{
     color: #fff;
 }
+.dashboard nav p{
+    background-color: #04122e;
+}
