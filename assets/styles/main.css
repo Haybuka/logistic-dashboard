@@ -329,7 +329,7 @@ border-radius: 5px;
 
 
 /* Dark Mode Styles */
-
+/* comment the styles below to see the light mode */
 body{
     background-color: #010a1d !important;
     color: #fff
