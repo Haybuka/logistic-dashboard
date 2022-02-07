@@ -292,6 +292,7 @@ border-radius: 5px;
 .shipment-indicator,.vehicle-indicator{
     position: relative;
 }
+.chart-keys{display: none;}
 .shipment-indicator::before{
     content: '';
     top: 50%;
