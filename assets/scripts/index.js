@@ -1,21 +1,26 @@
 let delayed;
 const ctx = document.getElementById('myChart').getContext('2d');
 const data = {
-        labels: ['','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29'],
+        labels: ['','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29','Oct 30'],
         datasets: [{
             label: 'shipments',
-            data: [0,18,25,15,30,50,15,10,30,40,20],
+            data: [0,18,25,15,30,50,15,10,25,40,10],
             borderColor:'#58cad3',
+            borderWidth:1,
             pointBackgroundColor:"#fff",
+            fill:true,
+            backgroundColor:"#64dae224"
             // tension:0.3
             //pbc for color of the indicator,tension for curve
         },
         {
             label: 'vehicle',
-            data: [20,30,15,15,40,50,15,30,25,30],
+            data: [20,30,60,15,40,50,45,50,25,10],
             borderColor:'#826af9',
-            fill:'#826af9',
+            borderWidth:1,
             pointBackgroundColor:"#fff",
+            fill:true,
+            backgroundColor:"#9686e424"
             // tension:0.3
             //pbc for color of the indicator,tension for curve
         }]
@@ -36,31 +41,47 @@ const config ={
         }
        },
         //search for delayed to add animation
-        radius:5,
-        hoverRadius:10,
+        radius:3,
+        hoverRadius:15,
         responsive:true,
         scales :{
             y:{
                 ticks :{
                     font:{
                         size:20,
-                    family:"'Poppins',sans-serif"
-
                     },
-                    stepSize : 10,
+                    color:'#fff',
+                    
+                    family:"'Poppins',sans-serif",
+                    stepSize : 15,
                     callback : function (value){
                         return value + 'k'
                         //adds a unit
                     }
+                },
+                grid:{
+                    display:true,
+                    drawBorder:true,
+                    drawOnChartArea:true,
+                    drawTicks:true,
+                    color: '#ffffff42'
                 }
             },
             x:{
                 ticks :{
                     font:{
                         size:18,
+                    },
+                    color:'#fff',
+                    
                     family:"'Poppins',sans-serif"
-
-                    }
+                },
+                grid:{
+                    display:true,
+                    drawBorder:true,
+                    drawOnChartArea:true,
+                    drawTicks:true,
+                    color: '#ffffff42'
                 }
             }
         },

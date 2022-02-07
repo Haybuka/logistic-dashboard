@@ -5,9 +5,6 @@
     list-style: none;
     font-family: 'Poppins',sans-serif;
 }
-.container{
-    
-}
 body{
     background-color: rgb(235, 235, 232);
 
@@ -23,6 +20,7 @@ main{
 /* styles the direct children of the main */
 .site-nav-main{
     background-color: #fff;
+    color: #000;
     width: 250px;
     padding: 20px 15px;
 }
@@ -52,6 +50,7 @@ main{
    font-size: 16px;
    margin-left: 20px;
    color: rgb(96, 96, 96);
+   text-transform: uppercase;
    margin: 20px 0 20px 20px;
 }
 .site-nav-main li{
@@ -69,7 +68,7 @@ li.site-nav-active a,li.site-nav-active i{
 .site-nav-main a{
    display: flex;
    align-items: center;
-   color: #000;
+   color: inherit;
    text-decoration: none;
    font-size: 14px;
 }
@@ -311,7 +310,7 @@ border-radius: 5px;
     top: 50%;
     left: 50%;
     transform: translate(-370%,-50%);
-    background-color: #826af9 ;
+    background-color: #826af9bf ;
     width: 20%;
     height: 20%;
     position: absolute;
@@ -322,8 +321,35 @@ border-radius: 5px;
 }
 #myChart{
     position: absolute;
-    height: 300px !important;
-    width: 100% !important;
+    height: 360px !important;
+    width: 100%!important;
     padding: 10px 0;
     transform: translateY(40px);
+}
+
+
+/* Dark Mode Styles */
+
+body{
+    background-color: #010a1d !important;
+    color: #fff
+}
+.card-rows article{
+    background-color: #04122e;
+    color: #fff;
+}
+.site-nav-main{
+    background-color: #04122e;
+    color: #fff;
+}
+.dashboard-charts-info ul{
+    background-color: #04122e;
+    color: #fff;
+}
+.dashboard-charts-display{
+    background-color: #04122e;
+    color: #fff;
+}
+.site-nav-main a i{
+    color: #fff;
 }
