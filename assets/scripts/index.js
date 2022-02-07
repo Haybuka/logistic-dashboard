@@ -24,6 +24,12 @@ const config ={
     type:'line',
     data:data,
     options:{
+       plugins:{
+        legend:{
+            display:false
+            //to remove data label
+        }
+       },
         //search for delayed to add animation
         radius:5,
         hoverRadius:10,
