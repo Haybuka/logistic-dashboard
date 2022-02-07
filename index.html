@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <title>Dashboard</title>
 </head>
+<!-- <i class="fad fa-moon-stars"></i> dark mode -->
+<!-- <i class="fas fa-sun"></i> light mode -->
 <body>
     <div class="container">
         <main>
@@ -103,12 +105,87 @@
                     </nav>
                 </header>
                 <section  class="dashboard-main">
-                    
+                    <aside class="dashboard-details">
+                        <article class="dashboard-welcome">
+                            <h3 >Good Evening, <span>Haybuka</span></h3>
+                            <p class="text-light">Glad to have you back, here is an overview of your operations today</p>
+                        </article>
+                        <aside class="card-rows">
+                          <article>
+                              <h4>Registered Customers</h4>
+                              <p>380.2k</p>
+                              <span>3467 Joined Today</span>
+                              <div class="card-rows-footer">
+                                <i class="fas fa-user site-nav-icon"></i>
+                              </div>
+                          </article>
+                          <article>
+                            <h4>Registered Transporters</h4>
+                            <p>315.6M</p>
+                            <span>1467 Joined Today</span>
+                            <div class="card-rows-footer">
+                              <i class="fas fa-users site-nav-icon"></i>
+                            </div>
+                        </article>
+                        <article>
+                            <h4>Total Shipments</h4>
+                            <p>348.9k</p>
+                            <span>3467 Joined Today</span>
+                            <div class="card-rows-footer">
+                                <i class="fas fa-truck-loading logi"></i>
+                            </div>
+                        </article>
+                        </aside>
+                    </aside>
+                    <aside class="dashboard-charts">
+                        <article class="dashboard-charts-info">
+                           <aside>
+                            <h3 >Shipments</h3>
+                            <p class="text-light">Shipping is going pretty well today,here is what we have</p>
+                           </aside>
+                           <ul>
+                               <li><a href="" class="text-light">1D</a></li>
+                               <li><a href="" class="text-light">5D</a></li>
+                               <li><a href="" class="text-light active">1M</a></li>
+                               <li><a href="" class="text-light">1Y</a></li>
+                               <li><a href="" class="text-light">Max</a></li>
+                           </ul>
+                        </article>
+                        <article class="dashboard-charts-display">
+                            <aside class="dashboard-detailed">
+                                <ul>
+                                    <li>
+                                        <h4 class="text-light">Shipment</h4>
+                                        <p>60,000</p>
+                                    </li>
+                                    <li>
+                                        <h4 class="text-light">Active Vehicles</h4>
+                                        <p>237,889</p>
+                                    </li>
+                                </ul>
+                                
+                                <ul class="chart-keys">
+                                    <li>
+                                        <h4>Shipment</h4>
+                                        <p class="shipment-indicator">shipments</p>
+                                    </li>
+                                    <li>
+                                        <h4>Active Vehicles</h4>
+                                        <p class="vehicle-indicator">vehicles</p>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="dashboard-chart" style="">
+                                <canvas id="myChart"></canvas>
+
+                            </aside>
+                        </article>
+                    </aside>
                 </section>
             </section>
         </main>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
     <script src="/assets/scripts/index.js"></script>
 </body>
 </html>
