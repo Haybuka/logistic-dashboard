@@ -269,13 +269,13 @@ border-radius: 5px;
 }
 .dashboard-detailed ul h4{
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
 }
 .dashboard-detailed ul p{
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    /* margin: 10px 0; */
+    margin: 5px 0;
 }
 .dashboard-detailed .chart-keys{
     align-items: flex-end;
@@ -304,7 +304,7 @@ border-radius: 5px;
     content: '';
     top: 50%;
     left: 50%;
-    transform: translate(-300%,-50%);
+    transform: translate(-370%,-50%);
     background-color: #826af9 ;
     width: 20%;
     height: 20%;
