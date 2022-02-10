@@ -99,3 +99,14 @@ const config ={
     }
 }
 const myChart = new Chart(ctx,config)
+
+
+//nav toggles
+let siteNav = document.querySelector('.site-nav');
+
+let harmburger = [...document.querySelectorAll('.harmburger')];
+harmburger.forEach(burger =>{
+    burger.addEventListener('click',()=>{
+        siteNav.classList.toggle('toggle-nav')
+      })
+})
