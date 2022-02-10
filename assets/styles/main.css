@@ -389,14 +389,20 @@ body{
 @media screen and (max-width:966px){
     .site-nav{
          position: absolute;
-         z-index: 5;
+         z-index: 10;
          display: none;
         transition: all 0.25s ease-in;
     }
    .toggle-nav{
        display: block;
        width: 100%;
-       height: 100%;
+       /* height: 100%; */
+   }
+   main.hide .dashboard{
+       display: none;
+   }
+   .site-nav-footer{
+       width: auto;
    }
     .dashboard{
         position: relative;
@@ -480,5 +486,17 @@ body{
     } */
     #myChart{
         height: auto;
+    }
+    .dashboard-welcome h3{
+        font-size: 20px;
+    }
+    .card-rows article p{
+        font-size: 25px;
+    }
+    .card-rows article h4{
+        font-size: 16px;
+    }
+    .card-rows article span{
+        font-size: 14px;
     }
 }

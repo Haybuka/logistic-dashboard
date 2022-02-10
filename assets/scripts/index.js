@@ -1,10 +1,10 @@
 let delayed;
 const ctx = document.getElementById('myChart').getContext('2d');
 const data = {
-        labels: ['','Oct 21','Oct 22', 'Oct 23', 'Oct 24', 'Oct 25', 'Oct 26','Oct 27','Oct 28','Oct 29','Oct 30'],
+        labels: ['','Oct 21','Oct 22','Oct 27','Oct 28','Oct 29'],
         datasets: [{
             label: 'shipments',
-            data: [0,18,25,15,30,50,15,10,25,40,10],
+            data: [0,18,25,15,30,50],
             borderColor:'#58cad3',
             borderWidth:1,
             pointBackgroundColor:"#fff",
@@ -15,7 +15,7 @@ const data = {
         },
         {
             label: 'vehicle',
-            data: [20,30,60,15,40,50,45,50,25,10],
+            data: [20,30,60,15,50,45],
             borderColor:'#826af9',
             borderWidth:1,
             pointBackgroundColor:"#fff",
@@ -48,7 +48,7 @@ const config ={
             y:{
                 ticks :{
                     font:{
-                        size:20,
+                        size:14,
                     },
                     color:'#fff',
                     
@@ -70,7 +70,7 @@ const config ={
             x:{
                 ticks :{
                     font:{
-                        size:18,
+                        size:14,
                     },
                     color:'#fff',
                     
@@ -103,10 +103,12 @@ const myChart = new Chart(ctx,config)
 
 //nav toggles
 let siteNav = document.querySelector('.site-nav');
+let main = document.querySelector('main');
 
 let harmburger = [...document.querySelectorAll('.harmburger')];
 harmburger.forEach(burger =>{
     burger.addEventListener('click',()=>{
+        main.classList.toggle('hide')
         siteNav.classList.toggle('toggle-nav')
       })
 })
