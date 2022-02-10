@@ -484,14 +484,14 @@ body{
 }
 
 @media screen and (max-width:550px){
-    /* .dashboard-for_chart{
-        height: auto;
-    } */
+    .dashboard-for_chart{
+        height: 500px;
+    }
     .dashboard{
         padding: 10px;
     }
     #myChart{
-        height: auto;
+        height: 80% !important;
     }
     .dashboard-welcome h3{
         font-size: 20px;
