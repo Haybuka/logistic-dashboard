@@ -449,3 +449,12 @@ body{
 }
    
 }
+
+@media screen and (max-width:550px){
+    .dashboard-for_chart{
+        height: auto;
+    }
+    #myChart{
+        height: auto;
+    }
+}
