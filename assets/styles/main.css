@@ -356,3 +356,28 @@ body{
 .dashboard nav p{
     background-color: #04122e;
 }
+
+@media screen and (max-width:1250px){
+    .card-rows{
+        flex-wrap: wrap;
+    }
+    .card-rows article{
+        margin: 10px 0;
+        width: 380px;
+    }
+}
+
+@media screen and (max-width:1104px){
+    .card-rows{
+        flex-wrap: wrap-reverse;
+    }
+    .card-rows article{
+        width: 100%;
+    }
+    .dashboard-charts-info{
+        flex-direction: column;
+    }
+    .dashboard-charts-info ul{
+        margin: 10px auto;
+    }
+}
