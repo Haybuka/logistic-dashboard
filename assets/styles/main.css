@@ -484,6 +484,9 @@ body{
     /* .dashboard-for_chart{
         height: auto;
     } */
+    .dashboard{
+        padding: 10px;
+    }
     #myChart{
         height: auto;
     }

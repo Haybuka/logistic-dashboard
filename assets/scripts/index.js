@@ -48,7 +48,7 @@ const config ={
             y:{
                 ticks :{
                     font:{
-                        size:14,
+                        size:12,
                     },
                     color:'#fff',
                     
@@ -70,7 +70,7 @@ const config ={
             x:{
                 ticks :{
                     font:{
-                        size:14,
+                        size:12,
                     },
                     color:'#fff',
                     
