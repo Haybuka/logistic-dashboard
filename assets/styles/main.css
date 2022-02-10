@@ -443,17 +443,41 @@ body{
         align-items: center;
     }
 }
+
+
 @media screen and (max-width:670px){
 .dashboard-charts-info li{
     margin: 0 5px;
 }
-   
+.dashboard-charts-display{
+    padding: 10px;
+}
+.dashboard-detailed{
+    display: block;
+}
+.dashboard-detailed ul{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+.shipment-indicator::before{
+    transform: translate(300%,-50%);
+}
+.dashboard-detailed .chart-keys h4{
+    display: none;
+}
+.dashboard-detailed ul p{
+    font-size: 16px;
+}
+.dashboard-detailed .chart-keys p{
+    font-size: 14px;
+}
 }
 
 @media screen and (max-width:550px){
-    .dashboard-for_chart{
+    /* .dashboard-for_chart{
         height: auto;
-    }
+    } */
     #myChart{
         height: auto;
     }
