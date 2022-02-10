@@ -9,6 +9,9 @@ body{
     background-color: rgb(235, 235, 232);
 
 }
+html{
+    scroll-behavior: smooth;
+}
 /* main covers all */
 main{
     display: flex;

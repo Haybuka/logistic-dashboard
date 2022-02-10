@@ -112,3 +112,5 @@ harmburger.forEach(burger =>{
         siteNav.classList.toggle('toggle-nav')
       })
 })
+
+AOS.init()
