@@ -18,6 +18,7 @@ main{
 }
 
 /* styles the direct children of the main */
+
 .site-nav-main{
     background-color: #fff;
     color: #000;
@@ -150,6 +151,9 @@ li.site-nav-active a,li.site-nav-active i{
     color: rgb(96, 96, 96);
 }
 /* dashboard details styling */
+.harmburger{
+    display: none;
+}
 .dashboard-details{
     margin-bottom: 50px;
 }
@@ -379,5 +383,28 @@ body{
     }
     .dashboard-charts-info ul{
         margin: 10px auto;
+    }
+}
+
+@media screen and (max-width:966px){
+    .site-nav{
+         position: absolute;
+         z-index: 2;
+         display: none;
+    }
+    .dashboard{
+        position: relative;
+        z-index: -3;
+    }
+    .site-nav-main{
+        width: 300px;
+    }
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    header .harmburger{
+        display: block;
     }
 }
